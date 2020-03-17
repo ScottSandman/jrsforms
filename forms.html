@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Reference</title>
+  </head>
+  <body>
+    <form>
+      Standard Label:<br />
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      Standard Button:<br />
+      <input type="button" value="click me!" /><br /><br />
+      Standard Checkbox:<br />
+      <input
+        type="checkbox"
+        id="my-checkbox"
+        name="checkbox-name"
+        value="checkbox-value"
+      />
+      <label for="my-checkbox">Select Me!</label><br /><br />
+      Color Selection:<br />
+      <input type="color" /><br /><br />
+      Date Selector with Calendar:<br />
+      <input type="date" /><br /><br />
+      Date Selector with Time Input:<br />
+      <input type="datetime-local" /><br /><br />
+      Standard Email Input:<br />
+      <input type="email" value="enter email here" /><br /><br />
+      File Selector:<br />
+      <input type="file" /><br /><br />
+      <p>
+        Hidden Input Form (for data not seen by user; don't use for security!):
+      </p>
+      <br />
+      <input type="hidden" /><br /><br />
+      Image Input Allows for Image to be used as a Button:<br />
+      <input
+        type="image"
+        style="height:100px; width:200px;"
+        src="https://gifimage.net/wp-content/uploads/2018/06/submit-button-gif-7.gif"
+        alt="Submit"
+      /><br /><br />
+      Month Selector with Calendar:<br />
+      <input type="month" /><br /><br />
+      Numeric Input with incremental increase/decrease:<br />
+      <input type="number" /><br /><br />
+      Standard Password Input (hides text):<br />
+      <input type="password" /><br /><br />
+      Radio Button:<br />
+      <input
+        type="radio"
+        id="my-radio-button"
+        name="my-radio-button"
+        value="Select Me!"
+      />
+      <label for="my-radio-button">Select Me!</label><br /><br />
+      Input Range Slider (min, max, step interval and default value)<br />
+      <input type="range" max="100" min="0" step="5" value="50" /><br /><br />
+      Standard Reset Button:<br />
+      <input type="reset" /><br /><br />
+      Text Input for Entering a Search String:<br />
+      <input type="search" /><br /><br />
+      Standard Submit Button:<br />
+      <input type="submit" /><br /><br />
+      Input for Entering a Telephone Number (format specific):<br />
+      <input
+        type="tel"
+        placeholder="800-555-5555"
+        pattern="[0-9]{3}-[0-9](3}-[0-9]{4}"
+      /><br /><br />
+      Standard text input:<br />
+      <input type="text" /><br /><br />
+      Time input with incremental (hour, minute, am/pm):<br />
+      <input type="time" /><br /><br />
+      Text input for URL:<br />
+      <input type="url" /><br /><br />
+      Select a week (dropdown with calendar showing week number and year):<br />
+      <input type="week" /><br /><br />
+      Large Input Area for Text (parameters number rows and columns):<br />
+      <textarea></textarea><br /><br />
+      Standard Button:<br />
+      <button>Click</button><br /><br />
+      Group Selections from Dropdown:<br />
+      <label for="cars">Select a Car</label>
+      <select id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="Mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup> </select
+      ><br /><br />
+      Used to Group Related Form Elements (draws box around the elements):<br />
+      <fieldset>
+        <legend>Title</legend>
+        <label for="fname">Name</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+      </fieldset>
+      <br /><br />
+    </form>
+    Represents Result of a Calculation:<br />
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      0
+      <input type="range" id="a" value="50" />
+      100 +
+      <input type="number" id="b" value="50" />
+      =
+      <output name="x" for="a b"></output>
+    </form>
+    <br /><br />
+  </body>
+</html>
